@@ -1,0 +1,55 @@
+@import '../../base-styles/colors.scss';
+@import '../../base-styles/menu.animation.scss';
+@import '../../base-styles/_fonts.scss';
+@import '../../base-styles/_base.scss';
+
+.hamburger {
+  z-index: 4;
+  @media only screen and (min-width: 768px){
+    display: none !important;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 60%;
+  flex-basis: 60%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_nav {
+    display: none;
+
+    @media only screen and (min-width: 768px){
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 500px;
+    }
+  }
+}
+
+.btn-login {
+  font-size: 16px;
+  background-color: $color_red-light;
+  color: $color_white-1;
+  border: 1px solid $color_red-light;
+
+  &:hover {
+    cursor: pointer;
+    background-color: inherit;
+    color: $color_red-light;
+  }
+}
+
+.is-active {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}

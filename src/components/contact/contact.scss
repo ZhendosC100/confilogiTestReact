@@ -1,0 +1,146 @@
+@import '../../base-styles/colors.scss';
+@import '../../base-styles/_fonts.scss';
+@import '../../base-styles/_base.scss';
+
+.contact {
+  padding: 60px 0;
+  background-color: $color_blue-light;
+
+  &_description {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 556px;
+    color: $color_white-1;
+    font-size: 14px;
+    line-height: 1.4;
+
+    &-wrapper {
+      text-align: center;
+    }
+  }
+
+  &_header {
+    width: 100%;
+    max-width: 270px;
+    margin: 27px auto;
+    color: $color_white-1;
+    font-size: 27px;
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 500px;
+
+    @media only screen and (min-width: 768px){
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  &_form__email {
+    margin-bottom: 30px;
+    padding: 0 10px;
+    height: 38px;
+    border: 2px solid $color_white-1;
+    width: 91%;
+    max-width: 296px;
+    border-radius: 7px;
+    font-family: 'Rubik-regular';
+    outline: none;
+
+    @media only screen and (min-width: 768px){
+      margin-bottom: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &_btn {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid $color_red-light;
+    background-color: $color_red-light;
+    color: $color_white-1;
+
+    @media only screen and (min-width: 768px){
+      max-width: 150px;
+      &:hover {
+        cursor: pointer;
+        background-color: $color_white-1;
+        color: $color_red-light;
+      }
+    }
+  }
+}
+
+.input {
+  &_wrapper {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 296px;
+
+    @media only screen and (min-width: 768px){
+      margin-bottom: 0;
+    }
+  }
+
+  &_img {
+    display: none;
+    position: absolute;
+    top: 11px;
+    right: 9px;
+  }
+
+  &_error {
+    display: none;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    bottom: 15px;
+    left: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: $color_red-light;
+    font-size: 13px;
+    font-style: italic;
+    color: $color_white-1;
+    font-weight: 300;
+    transform: translate(-50%, 0);
+
+    @media only screen and (min-width: 768px){
+      bottom: -8px;
+    }
+  }
+}
+
+// active classes
+.input_wrapper-active {
+  border-radius: 10px;
+  background-color: $color_red-light;
+
+  .input {
+    &_img {
+      display: inline-block;
+    }
+
+    &_error {
+      display: block;
+    }
+  }
+
+  .contact_form__email {
+    margin-top: 2px;
+    width: 90%;
+
+    @media only screen and (min-width: 768px){
+      width: 91%;
+    }
+  }
+}
