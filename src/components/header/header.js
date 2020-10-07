@@ -7,9 +7,10 @@ const Header = ({ showPopup, showModal, openMenuMobile }) => {
 
   const [mouseOverIndex, setMouseOverIndex] = useState(true);
   const [activeCloseButton, setActiveCloseButton] = useState('');
+  const viewPortPoint = document.documentElement.clientWidth;
 
   const toShowModalPopup = () => {
-    if (mouseOverIndex) {
+    if (mouseOverIndex && viewPortPoint > 768) {
       showPopup(true);
       setMouseOverIndex(false)
     }
