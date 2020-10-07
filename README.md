@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Użytkownik powinien móc na stronie:
 
-In the project directory, you can run:
+- Widzieć optymalny zarys strony w zależności od urządzenia           - done ✅
+- Zachować 'aktywne' stany interaktywnych elementów na stronie        - done ✅
+- Powinien otrzymać wiadomość z błędem w newsletterze, jeśli:         
+  - Input jest pusty,                                                 - done ✅
+  - Adres email nie jest poprawnie zapisany (powinien posiadać `@`)   - done ✅ (❗zrobiłem sprawdzenie na całą prawidłowość napisania e-mailu: example@example.expmpl✅ , czyli example@example 🚫 - już nie będzie prawidłowo❗)
 
-### `yarn start`
+Aby ukończyć to zadanie, powinnaś/powinieneś:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Stworzyć zaokrąglony kształt niebieskiego tła przy pomocy kodu,       - done ✅
+- Zmienić `fill` i `stroke` koloru grafik wektorowych w konkretnych punktach,  - done ✅
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+❗ Na stronie zrobiono: aktywne taby (Simple Bookmarking, Speedy Searching, Easy Sharing), actywny blok pytań, menu po kliknęciu na "hamburgerga" w wersji mobilnej (użyłem "hamburgers" v1.1.3  https://jonsuh.com/hamburgers/) 
 
-### `yarn test`
+## Extra funkcjonalności (must-have)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Również chcielibyśmy, aby na stronie pojawiał się modal (pop-up), na którym będzie również zaimplementowane okno z zawartością jednej z zakładek (`tab-2-design.jpg` lub `tab-3-design.jpg`). Ma się ono otwierać:
 
-### `yarn build`
+- Po najechaniu kursorem górnej części strony,  - done ✅ (działa tylko jednokrotnie❗ zrobiono dla szerokości powyżej 576px, szerokość sprawdza przy załadowaniu strony❗ )
+- po 30 sekundach wejścia na stronę,            - done ✅
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Dodatkowo, w stopce strony znajduje się również liczba '35,000+ already joined'. Chcielibyśmy, aby ta liczba spadała do 0 w ciągu 20 sekund od wejścia na stronę.                              - done ✅
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Budowanie projektu
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Śmiało korzystaj z takich narzędzi, jakich potrzebujesz aby odwzorować projekt. Dużym plusem byłoby, gdyby zostały wykorzystane:
 
-### `yarn eject`
+- Webpack, +✅
+- Babel,   +✅
+- Sass,    +✅
+- React    +✅
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Oddanie projektu
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ostateczny termin ukończenia i przesłania projektu jest taki, jaki został przedstawiony podczas rozmowy u nas w biurze. Forma oddania projektu:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Repozytorium na githubie,  ✅
+- Spakowana paczka i przesłana na adres zwrotny, z którego zostało wysłane zadanie rekrutacyjne. ✅
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Rownież załadowałem na hosting dla sprawdzenia na żywo   http://confilogi-test-react.tretsyak.pl/ ❗
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
